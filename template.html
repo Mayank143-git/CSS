@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        nav{
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            padding: 0px 100px;
+            position: fixed;
+            background-color: #004277;
+        }
+        nav ul{
+            float:left;
+        }
+        nav li{
+            display: inline-block;
+            list-style: none;
+        }
+        nav li a{
+            font-size: 15px;
+            padding: 0px 10px;
+            margin-top: 10px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+        }
+        nav p{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            float: right;  
+            margin-top: 7px;     
+        }
+        nav p a{
+            color: white;
+        }
+        nav p button{
+            background-color: #02ACFE;
+            color: white;
+            border-radius: 2px;
+            border: none;
+            width: 80px;
+            height: 35px;
+            margin-left: 20px;
+            cursor: pointer;
+        }
+        .form
+        {
+            width: 100%;
+            height: 100px;
+            background-color: blue;
+        }
+        input 
+        {
+            height: 22px;
+            width: 450px;
+        }
+        .city
+        {   
+        margin-top: 60px;
+        margin-right: 705px;
+        float: right;
+        }
+        .state
+        {
+            margin-top: -35px;
+            margin-right: 515px;
+            float: right;
+        }
+        .code
+        {
+            margin-top: -35px;
+            margin-right: 420px;
+            float: right;
+        }
+        .city1
+        {
+        width: 255px;
+        height: 35px;
+         text-align: center;
+        }
+        .state2
+        {
+        width: 80px;
+        height: 35px;
+        text-align: center;
+        }
+        .code2
+        {
+        width: 80px;
+        height: 35px;
+        text-align: center;
+        }
+        .home
+        {
+            margin-top: -35px;
+            margin-right: 610px;
+            float: right;
+        }
+         .button .search{
+            background-color: #004277;
+            color: white;
+            border-radius: 2px;
+            border: none;
+            width: 80px;
+            height: 35px;
+            margin-left: 840px;
+            margin-top: -35px;
+            cursor: pointer;
+        }
+        .image img
+        {
+            width: 100%;
+        
+        }
+        .btn{
+            padding: 8px 20px;
+            background-color: #02ACFE;
+            color: white;
+            border-radius: 2px;
+            text-decoration: none;
+            font-family: Jost;
+            font-weight: 500;
+            margin-top: 10px;
+        }
+        section
+        {
+            padding: 4.5rem 0 3rem;
+        }
+        #home
+        {
+            background: url(https://tse3.mm.bing.net/th?id=OIP.odSm-Lqc9Au-acbkdUboowHaE-&pid=Api&P=0&h=220);
+            background-repeat: no-repeat;
+            width: 1265px;
+            height: 630px;
+            margin-top: 10px;
+            margin-right: 0px;
+            background-size: cover;
+            background-position: center;
+            align-items: center;
+        }
+        .home-text
+        {
+            padding-left: 260px;
+            padding-top: 15px;
+        }
+        .home-text h1{
+            color: white;
+            font-size: 45px;
+            font-family: jost;
+            font-weight: 500;
+        }
+        .home-text h3{
+            color: white;
+            font-size: 16px;
+            font-family: jost;
+            font-weight: 300;
+        }
+        .home-text h4{
+            color: white;
+            font-size: 16px;
+            font-family: jost;
+            font-weight: 300;
+        }
+        .home-text h2{
+            color: white;
+            font-size: 30px;
+            font-family: jost;
+            font-weight: 400;
+        }
+        .text h1
+        {
+            font-size: 30px;
+            font-family: jost;
+            text-align: center;
+            font-weight: 500;
+            margin-top: 35px;
+        }
+        .text h5
+        {
+            font-size: 14px;
+            font-family: jost;
+            text-align: center;
+            font-weight: 400;
+            margin-top: 2px;
+        }
+        .container
+        {
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+            overflow: auto;
+        }
+        img{
+            width: 100%;
+            display: block;
+            transition: transform 1s;
+        }
+        .one
+        {
+            width: 370px;
+            height: 385px;
+            font-family: jost;
+            border: 1px solid;
+            margin: 20px;
+            cursor: pointer;
+            overflow: hidden;
+            float: left;
+        }
+        h4
+        {
+            margin-left: 15px;
+            margin-top: 20px;
+            color:#02ACFE;
+            line-height: 24px;
+            font-weight: 600;
+            font-size: 15px; 
+        }
+        h3{
+            margin-left: 15px;
+            margin-top: 5px;
+            color:#0a2134;
+            line-height: 24px;
+            font-weight: 600;
+            font-size: 20px;
+        }
+        p{
+            margin-left: 15px;
+            margin-top: 10px;
+            color: #43505b;
+            font-size: 14px;
+            line-height: 16px;
+            font-weight: 400;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <nav>
+            <div class="logo">
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <ul>
+                <li><a href="#">Konato</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Property</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <p>Call Us:
+               <a href="#">+10 (78) 356 3276</a> 
+                <button>Sign In</button>
+            </p>
+        </nav>
+        <div class="holder">
+        <div class="city">
+            <input type="text" placeholder="Enter Keyword" class="city1">
+        </div>
+        <div class="state">
+            <input type="text" placeholder="Bed" class="state2">
+        </div>
+        <div class="code">
+            <input type="text" placeholder="Bath" class="code2">
+        </div>
+        <div class="home">
+            <select  style="width: 80px; height: 35px;">
+                <option>Rent</option>
+                <option>Flat</option>
+                <option>House</option>
+                <option>Mention</option>
+            </select>
+        </div>
+        <div class="button">
+        <button class="Search">Search</button>
+        </div>
+        </div>
+        <section class="home container" id="home">
+          <div class="home-text">
+            <h3>3 Bed-2 Bath-2200 sq ft</h3>
+            <h1>Light House NY</h1>
+            <h4>Get started by choosing from one of our pre-built page<br>templates to showcase your properties</h4>
+            <h2>$ 3,272</h2><br>
+            <a href="#btn" class="btn">View Property</a>
+          </div>
+        </section>
+        <div class="text">
+            <h1> Display Latest & Featured Properties</h1>
+            <h5>Get started by choosing from one of our pre-built page templates to<br>showcase your properties </h5>
+        </div>
+        <div class="container">
+        <div class="one">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.S_xUpn0aM50BgS2BhsRnIAHaE7&pid=Api&P=0&h=220" height="250px">
+            <h4>$6728</h4>
+            <h3>Appartment</h3>
+            <p> Get started by choosing from one of our pre-built page templates to showcase your properties </p>
+        </div>
+        <div class="one">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.qsJxz2XGzAeyrKHZadPIxgHaEo&pid=Api&P=0&h=220" height="250px">
+            <h4>$6728</h4>
+            <h3>Office</h3>
+            <p> Get started by choosing from one of our pre-built page templates to showcase your properties </p>
+        </div>
+        <div class="one">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.Z1yJsHc7cwgY2bfmFJjpnQHaE8&pid=Api&P=0&h=220" height="250px">
+            <h4>$6728</h4>
+            <h3>Classic Home</h3>
+            <p> Get started by choosing from one of our pre-built page templates to showcase your properties </p>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

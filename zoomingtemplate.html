@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box
+        {
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+        }
+        img{
+            width: 100%;
+            display: block;
+            transition: transform 1s;
+        }
+        .one
+        {
+            width: 370px;
+            height: 455px;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 15px;
+            margin: 20px;
+            cursor: pointer;
+            overflow: hidden;
+            float: left;
+        }
+        h3{
+            margin-left: 20px;
+            color:#0a2134;
+            line-height: 24px;
+            font-weight: 600;
+            font-size: 20px;
+        }
+        p{
+            margin-left: 20px;
+            color: #43505b;
+            font-size: 15px;
+            line-height: 26px;
+            font-weight: 400;
+        }
+        
+        button{
+            background-color: white;
+            color: #43505b;
+            font-size: 14px;
+            font-weight: 600;
+            margin-left: 15px;
+            border-radius: 5px;
+            border: none;
+        }
+        .one:hover
+        {
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            transition: 0.5s;
+            color: #0d6efd;
+        }
+        .one:hover button
+        {
+            color: #0d6efd;
+        }
+        .one:hover img{
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+         <div class="one">
+            <img src="classroom-training.webp" height="250px">
+            <h3>Live Online Courses</h3>
+            <p> Online courses with regular live classes by professional mentors, certification, hands-on projects, and job assistance.</p>
+               <button>
+                GET STARTED ->
+               </button>
+        </div>
+         <div class="one">
+            <img src="online-live-training.webp" height="250px">
+            <h3>Classroom/Offline Courses</h3>
+            <p> Rigorous offline training in fully-digitized and distraction-free classrooms at our skill centers in Jodhpur and Jaipur.</p>
+               <button>
+                GET STARTED ->
+               </button>
+        </div>
+         <div class="one">
+            <img src="self-placed.webp" height="250px">
+            <h3>Self-Paced Courses</h3>
+            <p>  Pre-recorded self-paced courses curated by industry experts. The affordable learning experience with professional certification.</p>
+               <button>
+                GET STARTED ->
+               </button>
+         </div>
+    </div>
+</body>
+</html>

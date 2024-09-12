@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box
+        {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: relative;
+            left: 200px;
+            top: 100px;
+
+            animation-name:mayank;
+            animation-duration: 2s;
+            animation-iteration-count:infinite;
+            transition-timing-function: linear;
+        }
+
+        @keyframes mayank
+         {
+              0%
+              {
+                  width: 200px;
+                  height: 200px;
+                  transform: rotate(-90deg);
+              }
+              25% 
+              { 
+                 width: 200px;
+                 height: 200px;
+                 transform: rotate(-90deg);
+
+              }
+
+              50% 
+              { 
+                 width: 200px;
+                 height: 200px;
+                 transform: rotate(-90deg);
+
+              }
+
+              75% 
+              { 
+                 width: 200px;
+                 height: 200px;
+                 transform: rotate(-90deg);
+
+              }    
+         }
+
+        .one
+        {
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            position: absolute;
+            left: 200px;
+            top: 100px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="one">
+
+    </div>
+
+    <div class="box">
+
+    </div>
+</body>
+</html>

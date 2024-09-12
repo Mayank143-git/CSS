@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box
+        {   
+            display: flex;
+            border: 2px solid red;
+            /*flex-wrap: wrap;*/
+            width: 1000px;
+            height: 500px;
+            margin: auto;
+            align-items:center;
+            flex-direction:column;
+        
+        }
+        .one
+        {
+            border: 2px solid;
+            margin: 60px;
+            padding: 10px;
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="one"  style="align-self: flex-start;">
+            Home
+        </div>
+        <div class="one">
+            About
+        </div>
+        <div class="one" style="align-self: flex-end;">
+            Contact
+        </div>
+    </div>
+</body>
+</html>

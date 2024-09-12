@@ -1,0 +1,11 @@
+css
+
+- css stands for cascdding style sheet
+- css is used for how to display on the screen or paper media.
+- css is saves a lot of time.
+
+implementation way of css
+
+- inline style sheet
+- internal style sheet
+- external style sheet

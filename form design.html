@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>form design</title>
+<style>
+    .box
+    {
+        width: 500px;
+        height: 545px;
+        margin: auto;
+        border-style: dotted;
+        border-radius: 6px;
+    }
+    .one
+    {
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 40px;
+        margin-left: -115px;
+        margin-right: 70px;
+        text-align: left;
+        line-height: 20px;
+        float: right;
+        font-size: large;
+        font-weight: 100;
+    }
+    .address
+    {
+        color:pink;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top:60px;
+        margin-left: -115px;
+        margin-right: -60px;
+        text-align: left;
+        line-height: 20px;
+        float: right;
+        font-size:17px;
+    }
+    .address1
+    {
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 13px;
+        margin-left: -115px;
+        margin-right: 235px;
+        text-align: left;
+        line-height: 20px;
+        float: right;
+        font-size:10px;
+    }
+    .address2
+    {
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 5px;
+        margin-left: -115px;
+        margin-right: 23px;
+        text-align: left;
+        line-height: 20px;
+        float: right;
+        font-size:12px;
+    }
+    .address3
+    {
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 5px;
+        margin-left: -115px;
+        margin-right: 23px;
+        text-align: left;
+        line-height: 20px;
+        float: right;
+        font-size:12px;
+    }
+    input 
+    {
+        height: 22px;
+        width: 450px;
+    }
+    .city
+    {   
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 5px;
+        margin-left: -115px;
+        margin-right: 272px;
+        text-align: left;
+        line-height: 20px;
+        float: right;
+        font-size:12px;
+    }
+    .state
+    {
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 5px;
+        margin-left: -115px;
+        margin-right: -220px;
+        text-align: left;
+        line-height: 20px;
+        float: right;
+        font-size:12px; 
+    }
+    .code
+    {
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 5px;
+        margin-left: -115px;
+        margin-right: -342px;
+        text-align: left;
+        line-height: 20px;
+        float: right;
+        font-size:12px;
+    }
+    .city1
+    {
+        width: 200px;
+    }
+     .state2
+     {
+        width: 95px;
+
+     }
+     .code2
+     {
+        width: 95px;
+     }
+     .bed
+     {
+        color:pink;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top:70px;
+        margin-left: -115px;
+        margin-right: 8px;
+        text-align: left;
+        line-height: 20px;
+        float: right;
+        font-size:17px;
+     }
+     .bed1
+     {
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: -37px;
+        margin-left: -115px;
+        margin-right: 225px;
+        text-align: left;
+        line-height: 20px;
+        float: right;
+        font-size:10px;
+     }
+     .home
+     {
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: -7px;
+        margin-left: -115px;
+        margin-right: 270px;
+        text-align: left;
+        line-height: 20px;
+        float: right;
+        font-size:10px; 
+     }
+     .room
+     {
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: -7px;
+        margin-left: -115px;
+        margin-right: -340px;
+        text-align: left;
+        line-height: 20px;
+        float: right;
+        font-size:10px; 
+     }
+     .bedroom
+     {
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 7px;
+        margin-left: -115px;
+        margin-right: 270px;
+        text-align: left;
+        line-height: 20px;
+        float: right;
+        font-size:10px; 
+     }
+     .bathroom
+     {
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 7px;
+        margin-left: -115px;
+        margin-right: -340px;
+        text-align: left;
+        line-height: 20px;
+        float: right;
+        font-size:10px; 
+     }
+     .king
+     {
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 10px;
+        margin-left: -115px;
+        margin-right: 390px;
+        text-align: left;
+        line-height: 20px;
+        float: right;
+        font-size:10px; 
+     }
+     .queen
+     {
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: -45px;
+        margin-left: -115px;
+        margin-right: 270px;
+        line-height: 20px;
+        float: right;
+        font-size:10px; 
+     }
+     .full
+     {
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: -45px;
+        margin-left: -115px;
+        margin-right: 145px;
+        text-align: left;
+        line-height: 20px;
+        float: right;
+        font-size:10px; 
+     }
+     .twin
+     {
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: -45px;
+        margin-left: -115px;
+        margin-right: 27px;
+        text-align: left;
+        line-height: 20px;
+        float: right;
+        font-size:10px; 
+     }
+     .sign
+     {
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 25px;
+        margin-left: -115px;
+        margin-right: 30px;
+        text-align: left;
+        line-height: 20px;
+        float: right;
+        font-size:10px; 
+     }
+</style>
+</head>
+<body>
+    <div class="box">
+        <div class="one">
+            <h2 style="margin: 5px 95px;">Tell us about your home.</h2>
+        </div>
+        <div class="address">
+            <h3>Address</h3>
+        </div>
+        <div class="address1">
+            <b>YOUR INFORMATION IS PRIVATE</b>
+        </div>
+        <div class="address2">
+            <b>Address</b><br>
+            <input type="text" placeholder="Enter an address">
+        </div>
+        <div class="address3">
+            <b>Address2</b><br>
+            <input type="text" placeholder="Apt Number">
+        </div>
+        <div class="city">
+            <b>City</b><br>
+            <input type="text" placeholder="City" class="city1">
+        </div>
+        <div class="state">
+            <b>State</b><br>
+            <input type="text" placeholder="State" class="state2">
+        </div>
+        <div class="code">
+            <b>Zip Code</b><br>
+            <input type="text" placeholder="Zip Code" class="code2">
+        </div>
+        <div class="bed">
+           <h3>Bed & Bath</h3>
+        </div>
+        <div class="bed1">
+            <b>WHAT IS YOUR HOME LIKE?</b>
+        </div>
+        <div class="home">
+            Home Type<br>
+            <select  style="width: 210px; height: 25px;">
+                <option>House</option>
+                <option>Flat</option>
+                <option>Rent Home</option>
+                <option>Mention</option>
+            </select>
+        </div>
+        <div class="room">
+            Room Type<br>
+            <select style="width: 210px; height: 25px;">
+                <option>Entire home/apt</option>
+                <opton>Entire Flat</opton>
+                <option>Entire Rent Home</option>
+                <option>Entire Mention</option>
+            </select>
+        </div>
+        <div class="bedroom">
+            Bedrooms<br>
+            <select style="width: 210px; height: 25px;">
+                <option>1 Bedroom</option>
+                <option>2 Bedroom</option>
+                <option>3 Bedroom</option>
+                <option>4 Bedroom</option>
+            </select>
+        </div>
+        <div class="bathroom">
+            Bathrooms<br>
+            <select style="width: 210px; height: 25px;">
+                <option>1 Bathroom</option>
+                <option>2 Bathroom</option>
+                <option>3 Bathroom</option>
+                <option>4 Bathroom</option>
+            </select>
+        </div>
+        <div class="king">
+            King<br>
+            <select style="width: 90px; height: 25px;">
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+        </div>
+        <div class="queen">
+            Queen<br>
+            <select style="width: 90px; height: 25px;">
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+        </div>
+        <div class="full">
+            Full<br>
+            <select style="width: 90px; height: 25px;">
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+        </div>
+        <div class="twin">
+            Twin<br>
+            <select style="width: 90px; height: 25px;">
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+        </div>
+        <div class="sign">
+            <input type="submit" value="Sign me up!">
+        </div>
+    </div>
+</body>
+</html>
