@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+        .calculator {
+        width: 250px;
+        margin: 50px auto;
+        padding: 20px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+        }
+
+        #user_name {
+        width: 100%;
+        height: 40px;
+        margin-bottom: 15px;
+        font-size: 20px;
+        text-align: right;
+        padding: 0px;
+        }
+
+        .buttons {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5px;
+        }
+
+        button {
+        width: 100%;
+        height: 40px;
+        font-size: 18px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        }
+
+        button:hover {
+        background-color: #ccc;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id ="user_name"> 
+        <div class="buttons">
+          <button onclick="clear1('AC')">AC</button>
+          <button onclick="delete1('DEL')">DEL</button>
+          <button onclick="number('%')">%</button>
+          <button onclick="number('/')">/</button>
+          <button onclick="number('7')">7</button>
+          <button onclick="number('8')">8</button>
+          <button onclick="number('9')">9</button>
+          <button onclick="number('*')">*</button>
+          <button onclick="number('4')">4</button>
+          <button onclick="number('5')">5</button>
+          <button onclick="number('6')">6</button>
+          <button onclick="number('-')">-</button>
+          <button onclick="number('1')">1</button>
+          <button onclick="number('2')">2</button>
+          <button onclick="number('3')">3</button>
+          <button onclick="number('+')">+</button>
+          <button onclick="number('00')">00</button>
+          <button onclick="number('0')">0</button>
+          <button onclick="number('.')">.</button>
+          <button onclick="result('=')">=</button>
+          
+        </div>
+      </div>
+      <script>
+         
+         function number(num)
+         {
+           var a = document.getElementById('user_name');
+               a.value += num;
+         }
+
+         function result()
+         {
+          var result = document.getElementById('user_name');
+          result.value = eval(result.value);
+         
+        }
+
+        function clear1()
+         {
+          var clear1 = document.getElementById('user_name');
+          clear1.value = " ";
+         
+        }
+
+        function delete1()
+        {
+          var delete1 = document.getElementById('user_name');
+          delete1.value = delete1.value.slice(0, -1);
+        }
+
+      </script>
+</body>
+</html>
